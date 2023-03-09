@@ -1,13 +1,12 @@
 import React from "react";
 import {Box, Typography, styled, Button, Stack} from "@mui/material"
 import Background from "./../Images/HeroBackground.jpg";
-import { breakpoints } from "@mui/system";
 
 const Header = styled(Stack)({
     position: "absolute",
     width: "100%",
     minHeight: "3.7rem",
-    background: "#BFD200",
+    background: "#d4fc04",
 });
 
 const Content = styled(Stack)({
@@ -40,7 +39,7 @@ const RightInnerBox = styled(Box)({
 });
 
 const StyledButton = styled(Button)({
-    background: "#BFD200",
+    background: "#d4fc04",
     color: "black",
     borderRadius: "5px",
     fontSize: "1.5rem",
@@ -55,7 +54,7 @@ const WhiteText = styled(Typography)({
 });
 
 const GreenText = styled(Typography)({
-    color: "#BFD200",
+    color: "#d4fc04",
     fontStyle: "italic",
 });
 
@@ -72,7 +71,7 @@ export default function Hero(props) {
                         width={{sm:"80%",xs:"40%"}} />
                 </Handy>
                 <Stack direction="column" flex={7}>
-                    <HeaderContent direction="row" bgcolor={{xs: "#BFD200", sm: "transparent"}}>
+                    <HeaderContent direction="row" bgcolor={{xs: "#d4fc04", sm: "transparent"}}>
                         <Typography sx={{fontSize:{sm:"2.5rem", xs:"1.5rem"}}}>
                             {props.FirstTitlePart}
                         </Typography>
