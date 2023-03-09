@@ -15,8 +15,8 @@ const Votingbox = () => {
                 alignItems: "center"}}>
             <Typography variant="h5" sx={{color: "#d4fc04"}}>Geht's Dir auch so?</Typography>
             <Box sx={{display: "flex", alignItems: "center", m:"0 20%"}}>
-                <Counter icon={<ThumbUpOffAltIcon />}c={"white"}/>
-                <Counter icon={<ThumbDownOffAltIcon />} c={"red"}/>
+                <Counter startValue={134} icon={<ThumbUpOffAltIcon />}c={"white"}/>
+                <Counter startValue={4} icon={<ThumbDownOffAltIcon />} c={"red"}/>
             </Box>
         </Box>
     );

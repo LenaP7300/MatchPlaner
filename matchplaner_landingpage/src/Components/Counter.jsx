@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const Counter = (props) => { 
 
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(props.startValue);
 
     const handleClick = () => {
         setCounter(counter +1);

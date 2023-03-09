@@ -60,7 +60,6 @@ const GreenText = styled(Typography)({
     fontStyle: "italic",
 });
 
-//StyledBox als Parent von LeftBox und RightOuterBox?
 export default function Hero(props) {
     return (
         <Box bgcolor= "rgba(20,20,20,1)">
