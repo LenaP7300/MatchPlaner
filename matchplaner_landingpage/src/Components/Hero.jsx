@@ -1,6 +1,7 @@
 import React from "react";
-import {Box, Typography, styled, Button, Stack} from "@mui/material"
+import {Box, styled, Button, Stack} from "@mui/material"
 import Background from "./../Images/HeroBackground.jpg";
+import {GreenText, WhiteText, BigWhiteText, BigBlackText, StatsText} from '../Fonts';
 
 /* Background of the title and title of the Hero */
 const Header = styled(Stack)({
@@ -117,38 +118,6 @@ const StyledButton = styled(Button)({
     "&:hover": {
         background: "#DDDF00"
     }
-});
-
-/* Styled Texts */
-const WhiteText = styled(Typography)({
-    color: "white",
-    whiteSpace:"nowrap",
-});
-
-const GreenText = styled(Typography)({
-    whiteSpace:"nowrap",
-    color: "#BFD200",
-    fontStyle: "italic",
-});
-
-const BigBlackText = styled(Typography)(({theme}) => ({
-    whiteSpace:"nowrap",
-    fontSize: "1.5rem",
-    [theme.breakpoints.up("sm")]: {
-        fontSize: "2.5rem",
-    },
-}));
-
-const BigWhiteText = styled(WhiteText)(({theme}) => ({
-    fontSize: "1.5rem",
-    [theme.breakpoints.up("sm")]: {
-        fontSize: "2.5rem",
-    },
-}));
-
-const StatsText = styled(WhiteText)({
-    fontWeight: "bold", 
-    fontSize: "1.5rem",
 });
 
 export default function Hero(props) {

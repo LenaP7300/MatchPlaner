@@ -9,9 +9,9 @@ export default
             Subline: "Weil der Trainerjob Spaß machen soll!"
         },
         Button: "LOS GEHT'S",
-        Stats : {
-            Trainer: "6.000+",
-            Trainings: "5 Mio",
-            Spiele: "3.000+",
-        }
+        Stats : [
+            {name: "Trainer", number: "6.000+"},
+            {name: "Trainings", number: "5 Mio"},
+            {name: "Spiele", number: "3.000+"},
+        ],
     }
