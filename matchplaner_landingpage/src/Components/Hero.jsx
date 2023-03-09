@@ -72,34 +72,23 @@ function CallToAction(props){
 
 /* Stats at the bottom of the Hero */
 function Statistics(props){
+    const Statistics = props.Stats.map( stat => {
+        return (
+            <Stack direction="column">
+                <StatsText>
+                    {stat.number}
+                </StatsText>
+                <WhiteText>
+                    {stat.name}
+                </WhiteText>
+            </Stack>
+        )
+    })
     return (
         <Stack direction="row" sx={{display:"flex", 
                                     flexDirection:"row",
                                     justifyContent:"space-between"}}>
-            <Stack direction="column">
-                <StatsText>
-                    {props.Stats.Trainer}
-                </StatsText>
-                <WhiteText>
-                    Trainer
-                </WhiteText>
-            </Stack>
-            <Stack direction="column">
-                <StatsText>
-                    {props.Stats.Trainings}
-                </StatsText>
-                <WhiteText>
-                    Trainings
-                </WhiteText>
-            </Stack>
-            <Stack direction="column">
-                <StatsText>
-                    {props.Stats.Spiele}
-                </StatsText>
-                <WhiteText>
-                    Spiele
-                </WhiteText>
-            </Stack>
+            {Statistics}
         </Stack>
     )
 }
