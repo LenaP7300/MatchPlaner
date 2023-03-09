@@ -8,7 +8,7 @@ const Header = styled(Stack)({
     position: "absolute",
     width: "100%",
     minHeight: "3.75rem",
-    background: "#BFD200",
+    background: "#d4fc04",
 });
 
 function HeaderContent(props){
@@ -111,10 +111,11 @@ const RightInnerBox = styled(Box)({
 
 /* LOS GEHT's Button*/
 const StyledButton = styled(Button)({
-    background: "#BFD200",
+    background: "#d4fc04",
     color: "black",
     borderRadius: "5px",
     fontSize: "1.5rem",
+    marginTop: "8px",
     "&:hover": {
         background: "#DDDF00"
     }

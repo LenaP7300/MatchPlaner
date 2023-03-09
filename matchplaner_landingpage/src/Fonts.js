@@ -5,6 +5,7 @@ import { Typography , styled} from "@mui/material";
 export const WhiteText = styled(Typography)({
     color: "white",
     whiteSpace:"nowrap",
+    marginTop: "5px",
 });
 
 export const GreenText = styled(Typography)({
@@ -25,6 +26,29 @@ export const BigWhiteText = styled(WhiteText)(({theme}) => ({
     fontSize: "1.5rem",
     [theme.breakpoints.up("sm")]: {
         fontSize: "2.5rem",
+    },
+}));
+
+export const BigGreenText = styled(Typography)(({theme}) => ({
+    color: "#d4fc04",
+    fontSize: "1.5rem",
+    [theme.breakpoints.up("md")]:{
+        textAlign: "left",
+    },
+    [theme.breakpoints.up("sm")]: {
+        fontSize: "2.5rem",
+    },
+}));
+
+export const MessageText = styled(Typography)(({theme}) => ({
+    color: "white",
+    textAlign: "center", 
+    fontSize: "1.5rem",
+    [theme.breakpoints.down("lg")]:{
+        fontSize: "1.25rem",
+    },
+    [theme.breakpoints.down("md")]:{
+        display: "none",
     },
 }));
 

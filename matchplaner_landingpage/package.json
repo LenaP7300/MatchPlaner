@@ -1,5 +1,6 @@
 {
   "name": "matchplaner_landingpage",
+  "homepage": "https://kulturgedanken.de/react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

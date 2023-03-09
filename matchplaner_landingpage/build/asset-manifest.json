@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react/static/css/main.0f7b4b7e.css",
+    "main.js": "/react/static/js/main.46516bfa.js",
+    "static/js/787.7567b0f3.chunk.js": "/react/static/js/787.7567b0f3.chunk.js",
+    "static/media/HeroBackground.jpg": "/react/static/media/HeroBackground.ca0ed7c4bdfab0a90887.jpg",
+    "static/media/handy.png": "/react/static/media/handy.5f584c5aeeb4b68d41b9.png",
+    "static/media/handyBlank.png": "/react/static/media/handyBlank.baf0e3063bc684faab30.png",
+    "static/media/image(6).png": "/react/static/media/image(6).95bbb9997b14bd649c25.png",
+    "static/media/image(4).png": "/react/static/media/image(4).63addd85f3771fa46412.png",
+    "static/media/image(2).png": "/react/static/media/image(2).6fb2590986c0f67aa0f4.png",
+    "static/media/image(3).png": "/react/static/media/image(3).7e255ac2f222a39db93f.png",
+    "static/media/image(5).png": "/react/static/media/image(5).afc726d168a4cec2228b.png",
+    "index.html": "/react/index.html",
+    "main.0f7b4b7e.css.map": "/react/static/css/main.0f7b4b7e.css.map",
+    "main.46516bfa.js.map": "/react/static/js/main.46516bfa.js.map",
+    "787.7567b0f3.chunk.js.map": "/react/static/js/787.7567b0f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f7b4b7e.css",
+    "static/js/main.46516bfa.js"
+  ]
+}
