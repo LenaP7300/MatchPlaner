@@ -1,12 +1,13 @@
 import React from "react";
 import {Box, Typography, styled, Button, Stack} from "@mui/material"
 import Background from "./../Images/HeroBackground.jpg";
+import { breakpoints } from "@mui/system";
 
 const Header = styled(Stack)({
     position: "absolute",
     width: "100%",
     minHeight: "3.7rem",
-    background: "#d4fc04",
+    background: "#BFD200",
 });
 
 const Content = styled(Stack)({
@@ -20,8 +21,9 @@ const Handy = styled(Stack)({
 
 const HeaderContent = styled(Stack)({
     alignItems: "center", 
-    gap: 5,
+    gap: "10px",
     whiteSpace: "nowrap",
+    padding: "0 7px"
 });
 
 const RightOuterBox = styled(Box)({
@@ -39,7 +41,7 @@ const RightInnerBox = styled(Box)({
 });
 
 const StyledButton = styled(Button)({
-    background: "#d4fc04",
+    background: "#BFD200",
     color: "black",
     borderRadius: "5px",
     fontSize: "1.5rem",
@@ -54,7 +56,7 @@ const WhiteText = styled(Typography)({
 });
 
 const GreenText = styled(Typography)({
-    color: "#d4fc04",
+    color: "#BFD200",
     fontStyle: "italic",
 });
 
@@ -62,7 +64,7 @@ const GreenText = styled(Typography)({
 export default function Hero(props) {
     return (
         <Box bgcolor= "rgba(20,20,20,1)">
-            <Header direction="row" display={{sm:"block", xs:"none"}}/>
+            <Header direction="row"/>
             <Content direction={{sm:"row", xs:"column-reverse"}}>
                 <Handy flex={3}>
                     <Box component="img" 
@@ -71,7 +73,7 @@ export default function Hero(props) {
                         width={{sm:"80%",xs:"40%"}} />
                 </Handy>
                 <Stack direction="column" flex={7}>
-                    <HeaderContent direction="row" bgcolor={{xs: "#d4fc04", sm: "transparent"}}>
+                    <HeaderContent direction="row">
                         <Typography sx={{fontSize:{sm:"2.5rem", xs:"1.5rem"}}}>
                             {props.FirstTitlePart}
                         </Typography>
